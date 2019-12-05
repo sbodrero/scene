@@ -177,7 +177,7 @@
 				$ville =  get_post_meta($post->ID, _artiste_info_adresse_cp, true). ' ' . get_post_meta($post->ID, _artiste_info_adresse_ville, true);
 				$prooupas =  get_post_meta($post->ID, _artiste_info_statut, true);
 				$partenaires_insitutionnels = get_post_meta($post->ID, '_artiste_info_partenaires_insitutionnels', true);
-				$url = "http://www.desceneenscene.fr/ng-19-3/wp-content/themes/Nicolas/images"; 
+				$url = EM_DIR_URI . 'includes/images';
 				?>
 				<?php
 

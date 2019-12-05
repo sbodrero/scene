@@ -118,7 +118,7 @@
 				    <a href="<?php the_permalink(); ?>">
 				    <?php
 					$image =  wp_get_attachment_image(get_post_meta($post->ID, _production_info_image, true), full);
-                    $url = "http://www.desceneenscene.fr/ng-19-3/wp-content/themes/Nicolas/images";   
+                    $url = EM_DIR_URI . 'includes/images';
 					if ( has_post_thumbnail() ) {
 					  the_post_thumbnail(); 
 					  }
@@ -293,7 +293,7 @@
 				$ville =  get_post_meta($post->ID, _compagnie_info_adresse_cp, true). ' ' . get_post_meta($post->ID, _compagnie_info_adresse_ville, true);
 				$prooupas =  get_post_meta($post->ID, "_compagnie_info_statut", $single = true);
 				$partenaires_insitutionnels = get_post_meta($post->ID, '_compagnie_info_partenaires_insitutionnels', true);
-				$url = "http://www.desceneenscene.fr/ng-19-3/wp-content/themes/Nicolas/images"; ?>
+				$url = EM_DIR_URI . 'includes/images'; ?>
 				<?php
 				if ( has_post_thumbnail() ) {
 				the_post_thumbnail();

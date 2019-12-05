@@ -163,7 +163,7 @@
 				$adresse =  get_post_meta($post->ID, _dses_info_adresse_rue, true). ' ' .get_post_meta($post->ID, _dses_info_adresse_ville, true). ' ' . get_post_meta($post->ID, _dses_info_adresse_cp, true);
 				$prooupas =  get_post_meta($post->ID, _dses_info_statut, true);
 				$partenaires_insitutionnels = get_post_meta($post->ID, '_dses_info_partenaires_insitutionnels', true);
-				$url = "http://www.desceneenscene.fr/ng-19-3/wp-content/themes/Nicolas/images"; 
+				$url = EM_DIR_URI . 'includes/images';
 						
 				?>
 				<?php
