@@ -1,0 +1,281 @@
+/****** Dashboard widgets *******/
+
+/* Adding Dashicons to the welcome panel: http://melchoyce.github.io/dashicons/  */
+
+.dashicons {
+	padding: 11px !important;
+}
+
+.dashicons a:hover {
+	text-decoration: underline;
+	font-style: strong;
+}
+
+/* -Add Content- column dashicons */
+.dashicons.dashicons-admin-page {
+	content: "\f105";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+}
+
+/* Adds the post section icon */
+.dashicons.dashicons-admin-post {
+	content: "\f109";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';	
+}
+
+/* Adds the Media Library icon */
+.dashicons.dashicons-admin-media {
+	content: "\f104";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+	line-height: 23px !important;
+}
+
+
+/* -Appearance- column dashicons */
+
+/* Adds a theme/image icon */
+.dashicons.dashicons-format-image {
+	content: "\f128";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+	
+	line-height: 21px !important;
+}
+
+/* Adds a customize section icon */
+.dashicons.dashicons-hammer {
+	content: "\f308";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+	
+	line-height: 21px !important;
+	margin-top: 7px;
+}
+
+/* Adds a widgets and menus section icon */
+.dashicons.dashicons-welcome-widgets-menus {
+	content: "\f116";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+	
+	line-height: 21px !important;
+	margin-top: 7px;
+}
+
+/* Adds the Plugins icon */
+.dashicons.dashicons-admin-plugins {
+	content: "\f106";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+	
+	line-height: 21px !important;
+	margin-top: 7px;
+}
+
+
+/* NOT IN USE--- Adds a view your site (frontend) icon */
+.dashicons.dashicons-welcome-view-site {
+	content: "\f115";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';	
+}
+
+
+/* -Settings- column dashicons */
+
+/* Adds a general icon */
+.dashicons.dashicons-admin-generic {
+	content: "\f111";
+	padding: 0 0 5px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+}
+
+/* Adds a media icon */
+.dashicons.dashicons-images-alt2 {
+	content: "\f233";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+}
+
+/* Adds a reading icon */
+.dashicons.dashicons-clipboard {
+	content: "\f481";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+}
+
+/* Adds a reading icon */
+.dashicons.dashicons-admin-links {
+	content: "\f103";
+	padding: 0 0 15px 0;
+	width: 100%;
+	text-align: left;
+	font: normal 16px/1 'dashicons';
+}
+
+/**** welcome panel ******/
+
+.welcome-panel {
+	position: relative;
+	/* overflow: auto; */
+	margin: 0;
+	padding: 7px 10px 0;
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 1px rgba(1, 7, 14, 0.88);
+	font-size: 13px;
+	line-height: 2.1em;
+	text-align: center;
+	
+	
+	/* background: #0a2c5c; */
+}
+
+
+.welcome-panel-top {
+	position: relative;
+	/* overflow: auto; */
+	margin: 5px 0 5px 17px;
+	padding: 7px 10px 0;
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 1px rgba(1, 7, 14, 0.88);
+	font-size: 13px;
+	line-height: 2.1em;
+	text-align: left;
+	
+	
+	/* background: #0a2c5c; */
+}
+
+p {
+	font-size: 13px;
+	text-align: left;
+}
+
+
+.wide { 
+    text-align:left;
+    font-weight:bold;
+    background:#ebebeb;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 465px;
+}
+
+
+
+
+/* Columns - Add Content - Appearance - Settings*/	
+.welcome-panel-column-container {
+	padding: 5px 5px 5px 20px;
+	margin: 25px 0 25px 0;
+	background: #edeeec;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 1px 1px #ccc;
+}	
+	
+.welcome-panel-compagnie {
+	width: 97% !important;
+	padding: 1%;
+	margin: 25px 0 0px 0;
+	background: #edeeec;;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 5px 1px #ccc;
+	border-width: 5px;
+	border-style: outset;
+	border-color: #F39200;
+}
+
+
+.welcome-panel-enseignant {
+	width: 97% !important;
+	padding: 1%;
+	margin: 25px 0 0px 0;
+	background: #edeeec;;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 5px 1px #ccc;
+	border-width: 5px;
+	border-style: outset;
+	border-color: #B9CA0C;
+}
+
+.welcome-panel-mixte {
+	width: 97% !important;
+	padding: 1%;
+	margin: 25px 0 0px 0;
+	background: #edeeec;;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 5px 1px #ccc;
+	border-width: 5px;
+	border-style: outset;
+	border-color: #FFCC4D;
+}
+
+.welcome-panel-location {
+	width: 97% !important;
+	padding: 1%;
+	margin: 25px 0 0px 0;
+	background: #edeeec;;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 5px 1px #ccc;
+	border-width: 5px;
+	border-style: outset;
+	border-color: #BE1622;
+}
+.welcome-panel-artiste {
+	width: 97% !important;
+	padding: 1%;
+	margin: 25px 0 25px 0;
+	background: #edeeec;;
+	-webkit-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 5px 1px #ccc;
+	border-width: 5px;
+	border-style: outset;
+	border-color: #3D8CD1;
+}
+.h1{
+	font-style: oblique;
+}
+
+
+.a{
+	color: #3D8CD1;
+}
+
+#range-logo {
+    background-image:url(http://desceneenscene.fr/wp-content/themes/desceneenscene/images/fond-blanc.png);
+    display:block;
+    height:100%;
+    //width:240px;
+}
+	
+/* Hides the dismiss x close button so the user can not remove the welcome panel */
+.welcome-panel-close {
+	/* display: none; */
+}

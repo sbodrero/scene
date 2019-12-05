@@ -1,0 +1,144 @@
+<?php
+
+ 
+// Ajouter une metabox et plusieurs champs
+
+$posts = new Cuztom_Post_Type('production');
+ 
+$posts->add_meta_box(
+        'atelier_info',
+        'Informations',
+        array(
+                array(
+                        'name' => 'compagnie',
+                        'label' => 'Compagnie créatrice',
+                        'type' => 'post_select', 
+						'args'          => array(
+							'post_type' => 'compagnie',
+						),
+                ),
+				
+				array(
+                        'name' => 'discipline',
+                        'label' => 'Discipline de l\'atelier',
+                        'type' => 'checkboxes',
+						'options'       => array(
+							'Chant'    => 'Chant',  
+							'Cirque'    => 'Cirque', 
+							'Expo'    => 'Expo',
+							'Lecture'    => 'Lecture',
+							'Marionette & Ombre'    => 'Marionette & Ombre',
+							'Musique' 	=> 'Musique',
+							'Poésie'    => 'Poésie',
+							'Théâtre'    => 'Théâtre',
+							)
+                ), 
+							
+				array(
+                        'name' => 'public',
+                        'label' => 'Tranche du public',
+                        'type' => 'multi_select',
+						'options'       => array(
+							'Petite enfance'    => 'Petite enfance',  
+							'Enfance'    => 'Enfance',  
+							'Ados'    => 'Ados', 
+							'Adulte'    => 'Adulte',
+							),
+                        'explanation' => 'Maintenez la touche ctrl de votre clavier pour en selectionner plusieurs'
+                ), 
+                array(
+                        'name' => 'telephone',
+                        'label' => 'Telephone',
+                        'type' => 'text',
+                        'description' => 'Personnel ou professionnel',
+                        'explanation' => '',
+                ),
+                array(
+                        'name' => 'email',
+                        'label' => 'Adresse E-mail',
+                        'type' => 'text',
+                        'description' => 'Personnelle ou professionnelle'
+                ),
+                array(
+                        'name' => 'facebook',
+                        'label' => 'Facebook',
+                        'type' => 'text',
+                        'description' => 'Personnel ou professionnel',
+                        'explanation' => 'optionnel',
+                ),
+                array(
+                        'name' => 'myspace',
+                        'label' => 'My Space',
+                        'type' => 'text',
+                        'description' => 'Personnel ou professionnel',
+                        'explanation' => 'optionnel',
+                ),
+				array(
+                        'name' => 'gplus',
+                        'label' => 'Google +',
+                        'type' => 'text',
+                        'description' => 'Personnel ou professionnel',
+                        'explanation' => 'optionnel',
+                ),
+                array(
+                        'name' => 'linkedin',
+                        'label' => 'LinkedIn',
+                        'type' => 'text',
+                        'description' => 'Personnel ou professionnel',
+                        'explanation' => 'optionnel',
+                ),
+                array(
+                        'name' => 'siteweb',
+                        'label' => 'Site web',
+                        'type' => 'text',
+                        'description' => 'Entrez l\'url en entier (http://.. )',
+                        'explanation' => 'optionnel',
+                ),						
+	            array(
+                        'name' => 'partenaires_institutionnels',
+                        'label' => 'Partenaires institutionnels',
+                        'type' => 'textarea', 
+                        'description' => 'Listez vos partenaires institutionnels en les séparant d\'une virgule ou d\'un tiret.. '
+                )
+		)
+               
+);
+
+ 
+$posts->add_meta_box(
+        'production_activite',
+        'Actualité de la production',
+        array(	
+				array(
+                        'name' => 'fichier',
+                        'label' => 'Fchier complémentaire',
+                        'type' => 'file', 
+                        'explanation' => 'Si vous avez un fichier décrivant la production vous pouvez l\'envoyer ici. Il apparaîtra sur la fiche.',
+
+                ),
+	            array(
+                        'name' => 'note_intention',
+                        'label' => 'Note d\'intention',
+                        'type' => 'textarea'
+                ),
+               array(
+                        'name' => 'evenements',
+                        'label' => 'Vos prochaines dates',
+                        'type' => 'post_select', 
+						'args'          => array(
+							'post_type' => 'event',
+						),
+						'repeatable'    => true,
+						'explanation' => 'Pour rajouter un evenement, cliquez <a href="http://www.desceneenscene.fr/wordpress/wp-admin/edit.php?post_type=production"> Ici </a>',
+                ),
+	            array(
+                        'name' => 'partenaires',
+                        'label' => 'Partenaires',
+                        'type' => 'textarea', 
+                        'description' => 'Listez vos partenaires en les séparant d\'une virgule ou d\'un tiret.. '
+                )
+		)
+);		
+
+
+?>
