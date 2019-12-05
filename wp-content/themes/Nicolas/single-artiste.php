@@ -177,7 +177,7 @@
 				$ville =  get_post_meta($post->ID, _artiste_info_adresse_cp, true). ' ' . get_post_meta($post->ID, _artiste_info_adresse_ville, true);
 				$prooupas =  get_post_meta($post->ID, _artiste_info_statut, true);
 				$partenaires_insitutionnels = get_post_meta($post->ID, '_artiste_info_partenaires_insitutionnels', true);
-				$url = get_stylesheet_directory() . '/includes/images';
+				$url = get_stylesheet_directory_uri() . '/includes/images';
 				?>
 				<?php
 
